@@ -11,7 +11,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
   const prev = () => setIndex((i) => (i - 1 + images.length) % images.length);
 
   return (
-    <div className="relative w-full h-64 bg-slate-200 dark:bg-slate-800 rounded-lg overflow-hidden">
+    <div className="relative w-full aspect-video rounded-lg overflow-hidden bg-slate-200 dark:bg-slate-800">
       <img src={images[index]} className="w-full h-full object-cover" />
 
       {/* Prev */}

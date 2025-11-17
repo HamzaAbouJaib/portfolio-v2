@@ -1,3 +1,10 @@
+import exotech1 from "../assets/exotech/exotech-1.png";
+import exotech2 from "../assets/exotech/exotech-2.png";
+import exotech3 from "../assets/exotech/exotech-3.png";
+import exotech4 from "../assets/exotech/exotech-4.png";
+import exotech5 from "../assets/exotech/exotech-5.png";
+import exotech6 from "../assets/exotech/exotech-6.png";
+
 export interface Project {
   name: string;
   description: string;
@@ -22,11 +29,7 @@ export const projects: Project[] = [
       "Full-stack online store featuring secure authentication, real-time payment processing, and an optimized product browsing experience.",
     tags: ["TypeScript", "React", "Next.js", "MongoDB", "Stripe", "Firebase"],
     link: "#",
-    images: [
-      "/images/exotech1.png",
-      "/images/exotech2.png",
-      "/images/exotech3.png",
-    ],
+    images: [exotech1, exotech2, exotech3, exotech4, exotech5, exotech6],
   },
 
   {
