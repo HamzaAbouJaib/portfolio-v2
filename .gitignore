@@ -1,0 +1,60 @@
+# Dependencies
+/node_modules/
+
+# Build output
+/dist/
+/build/
+
+# Vite cache
+/.vite/
+.vite-deps/
+
+# Local environment
+.env
+.env.local
+.env.*.local
+
+# Editor configs
+.vscode/
+.idea/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# MacOS metadata
+.DS_Store
+
+# Linux metadata
+.Trash-*
+
+# Windows metadata
+Thumbs.db
+ehthumbs.db
+
+# Optional: JetBrains IDEs
+*.iml
+*.ipr
+*.iws
+
+# Optional: Sentry / source maps
+*.map
+
+# Optional: local SSL certs
+*.pem
+
+# Optional: OS-based
+desktop.ini
+
+# Output from TypeScript
+*.tsbuildinfo
+
+# Backup files
+*.bak
+*.tmp
+
+# Env files created by tooling
+.envrc
