@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { projects } from "../data/projects";
 import SectionHeader from "../components/SectionHeader";
 import ProjectCard from "../components/ProjectCard";
@@ -23,12 +24,12 @@ const FeaturedProjects: React.FC = () => {
           ))}
         </div>
 
-        <button
-          className="mt-4 text-xs text-accent hover:underline"
-          onClick={() => setSelected(projects[2])}
+        <Link
+          to="/projects"
+          className="block mt-4 text-xs text-accent hover:underline"
         >
           View more →
-        </button>
+        </Link>
 
         <ProjectModal project={selected} onClose={() => setSelected(null)} />
       </div>

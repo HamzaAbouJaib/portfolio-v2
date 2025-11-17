@@ -14,7 +14,7 @@ export const education: EducationItem[] = [
     location: "Hamilton, ON",
     bullets: [
       "Coursework in data structures, operating systems, databases, distributed systems, and computer networks.",
-      "Provost's Honour List (every eligible year) and Dean's Honour List recipient.",
+      "Provost's Honour List and Dean's Honour List recipient.",
     ],
   },
   {
