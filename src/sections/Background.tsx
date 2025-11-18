@@ -11,7 +11,7 @@ const Background: React.FC = () => {
 
   return (
     <section className="py-8">
-      <div className="mx-auto max-w-5xl px-4">
+      <div className="mx-auto max-w-3xl px-4">
         <SectionHeader eyebrow="Background" title="Experience & education" />
 
         <div className="mb-6 flex justify-center gap-6 text-xs font-medium">

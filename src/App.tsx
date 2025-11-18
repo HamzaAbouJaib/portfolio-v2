@@ -16,8 +16,8 @@ const App: React.FC = () => {
           <Route path="/resume" element={<ResumePage />} />
         </Routes>
       </main>
-      <footer className="border-t border-slate-200 bg-slate-50 text-slate-500 dark:border-slate-900 dark:bg-slate-950 dark:text-slate-500">
-        <div className="mx-auto flex max-w-5xl items-center justify-between py-4 text-[0.7rem] px-2 sm:px-32">
+      <footer className="border-t border-slate-200 bg-slate-50 text-slate-500 dark:border-slate-900 dark:bg-slate-950 dark:text-slate-500 px-2 sm:px-32 py-4">
+        <div className="mx-auto px-4 flex max-w-3xl items-center justify-between  text-[0.7rem]">
           <span>© {new Date().getFullYear()} Hamza Abou Jaib.</span>
           <span>Built with React, TypeScript & Tailwind.</span>
         </div>

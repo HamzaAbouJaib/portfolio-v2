@@ -4,7 +4,7 @@ import SectionHeader from "../components/SectionHeader";
 const Contact: React.FC = () => {
   return (
     <section id="contact" className="py-8">
-      <div className="mx-auto max-w-5xl px-4">
+      <div className="mx-auto max-w-3xl px-4">
         <SectionHeader eyebrow="Contact" title="Say hi" />
 
         <div className="rounded-xl border border-slate-200 bg-white p-4 text-sm text-slate-700 dark:border-slate-800 dark:bg-slate-900/60 dark:text-slate-300">

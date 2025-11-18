@@ -3,7 +3,7 @@ import React from "react";
 const Resume: React.FC = () => {
   return (
     <section className="min-h-screen bg-slate-950 text-slate-50 pt-20 pb-10">
-      <div className="mx-auto max-w-5xl px-4">
+      <div className="mx-auto max-w-3xl px-4">
         <h1 className="text-2xl font-semibold mb-4">Resume</h1>
 
         {/* Download Button */}

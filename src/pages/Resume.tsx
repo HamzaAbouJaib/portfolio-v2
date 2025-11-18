@@ -6,7 +6,7 @@ const ResumePage: React.FC = () => {
 
   return (
     <section className="min-h-screen pb-10 pt-16">
-      <div className="mx-auto max-w-5xl px-4">
+      <div className="mx-auto max-w-3xl px-4">
         <div className="mb-4 flex items-center justify-between gap-4">
           <h1 className="text-2xl font-semibold text-slate-900 dark:text-slate-50">
             Resume

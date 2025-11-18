@@ -6,7 +6,7 @@ import { skillCategories } from "../data/skills";
 const Skills: React.FC = () => {
   return (
     <section className="py-8">
-      <div className="mx-auto max-w-5xl px-4">
+      <div className="mx-auto max-w-3xl px-4">
         <SectionHeader eyebrow="Skills" title="Cloud & frontend toolbelt" />
 
         <div className="grid gap-6 md:grid-cols-2">

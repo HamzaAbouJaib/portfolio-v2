@@ -9,7 +9,7 @@ const ProjectsPage: React.FC = () => {
 
   return (
     <section className="py-16">
-      <div className="mx-auto max-w-5xl px-4">
+      <div className="mx-auto max-w-3xl px-4">
         <SectionHeader
           eyebrow="Projects"
           title="All projects"

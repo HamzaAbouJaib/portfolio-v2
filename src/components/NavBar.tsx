@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
 
   return (
     <header className="fixed inset-x-0 top-0 z-30 border-b border-slate-200 bg-slate-50/80 backdrop-blur dark:border-slate-900 dark:bg-slate-950/80 px-2 sm:px-32">
-      <nav className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
+      <nav className="mx-auto flex max-w-3xl items-center justify-between px-4 py-3">
         <button
           onClick={() => navigate("/")}
           className="font-mono text-sm font-semibold tracking-tight text-accent"

@@ -11,7 +11,7 @@ const FeaturedProjects: React.FC = () => {
 
   return (
     <section id="projects-section" className="py-16">
-      <div className="mx-auto max-w-5xl px-4">
+      <div className="mx-auto max-w-3xl px-4">
         <SectionHeader eyebrow="Projects" title="Featured work" />
 
         <div className="grid gap-4 md:grid-cols-2">

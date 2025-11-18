@@ -9,8 +9,8 @@ const Hero: React.FC = () => {
 
   return (
     <section className="pb-16 pt-6 sm:pt-10">
-      <div className="mx-auto max-w-5xl px-4">
-        <div className="space-y-4 max-w-xl">
+      <div className="mx-auto max-w-3xl px-4">
+        <div className="space-y-4">
           <h1 className="text-3xl font-semibold tracking-tight text-slate-900 dark:text-slate-50 sm:text-4xl">
             hi, <span className="text-accent">Hamza</span> here. 👋
           </h1>
