@@ -1,6 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import Tooltip from "../components/Tooltip";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaAward } from "react-icons/fa6";
 
 const Hero: React.FC = () => {
   const navigate = useNavigate();
@@ -24,33 +26,44 @@ const Hero: React.FC = () => {
 
           {/* Social icons */}
           <div className="flex items-center gap-4 pt-2">
-            <a
-              href="https://github.com/"
-              target="_blank"
-              rel="noreferrer"
-              className="text-slate-700 hover:text-accent dark:text-slate-300 dark:hover:text-accent transition-colors"
-              aria-label="GitHub"
-            >
-              <FaGithub size={22} />
-            </a>
+            <Tooltip label="GitHub">
+              <a
+                href="https://github.com/yourusername"
+                target="_blank"
+                className="text-xl hover:text-accent"
+              >
+                <FaGithub />
+              </a>
+            </Tooltip>
 
-            <a
-              href="https://linkedin.com/"
-              target="_blank"
-              rel="noreferrer"
-              className="text-slate-700 hover:text-accent dark:text-slate-300 dark:hover:text-accent transition-colors"
-              aria-label="LinkedIn"
-            >
-              <FaLinkedin size={22} />
-            </a>
+            <Tooltip label="LinkedIn">
+              <a
+                href="https://linkedin.com/in/yourusername"
+                target="_blank"
+                className="text-xl hover:text-accent"
+              >
+                <FaLinkedin />
+              </a>
+            </Tooltip>
 
-            <a
-              href="mailto:you@example.com"
-              className="text-slate-700 hover:text-accent dark:text-slate-300 dark:hover:text-accent transition-colors"
-              aria-label="Email"
-            >
-              <FaEnvelope size={22} />
-            </a>
+            <Tooltip label="Email">
+              <a
+                href="mailto:youremail@gmail.com"
+                className="text-xl hover:text-accent"
+              >
+                <FaEnvelope />
+              </a>
+            </Tooltip>
+
+            <Tooltip label="Credly">
+              <a
+                href="https://www.credly.com/users/your-credly-profile"
+                target="_blank"
+                className="text-xl hover:text-accent"
+              >
+                <FaAward />
+              </a>
+            </Tooltip>
 
             <button
               onClick={() => navigate("/resume")}
