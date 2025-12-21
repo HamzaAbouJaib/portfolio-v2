@@ -17,7 +17,7 @@ const Contact: React.FC = () => {
           <div className="mt-4 flex flex-wrap gap-3 text-xs">
             <a
               href="mailto:aboujaih@mcmaster.ca"
-              className="rounded-full bg-accent px-4 py-1.5 font-medium text-slate-950 hover:bg-teal-300"
+              className="rounded-full bg-accent px-4 py-1.5 font-medium text-slate-950 hover:bg-teal-200 transition-all duration-500 ease-in-out"
             >
               Email
             </a>
@@ -25,7 +25,7 @@ const Contact: React.FC = () => {
               href="https://www.linkedin.com"
               target="_blank"
               rel="noreferrer"
-              className="rounded-full border border-slate-300 px-4 py-1.5 font-medium text-slate-800 hover:border-accent dark:border-slate-700 dark:text-slate-200"
+              className="rounded-full border border-slate-300 px-4 py-1.5 font-medium text-slate-800 hover:border-accent dark:border-slate-700 hover:dark:bg-slate-700 hover:bg-slate-100 dark:text-slate-200 transition-all duration-500 ease-in-out"
             >
               LinkedIn
             </a>
@@ -33,7 +33,7 @@ const Contact: React.FC = () => {
               href="https://github.com"
               target="_blank"
               rel="noreferrer"
-              className="rounded-full border border-slate-300 px-4 py-1.5 font-medium text-slate-800 hover:border-accent dark:border-slate-700 dark:text-slate-200"
+              className="rounded-full border border-slate-300 px-4 py-1.5 font-medium text-slate-800 hover:border-accent dark:border-slate-700 hover:dark:bg-slate-700 hover:bg-slate-100 dark:text-slate-200 transition-all duration-500 ease-in-out"
             >
               GitHub
             </a>

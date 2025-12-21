@@ -21,19 +21,21 @@ const Background: React.FC = () => {
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
-                className={`relative pb-1 uppercase tracking-[0.2em] ${
+                className={`group relative pb-1 uppercase tracking-[0.2em] transition-colors ${
                   isActive
                     ? "text-slate-900 dark:text-slate-50"
-                    : "text-slate-500 dark:text-slate-500"
+                    : "text-slate-500 dark:text-slate-500 hover:text-slate-700 hover:dark:text-slate-200"
                 }`}
               >
                 {tab === "experience" ? "Experience" : "Education"}
+
                 <span
-                  className={`absolute inset-x-0 -bottom-0.5 h-0.5 rounded-full transition-all ${
-                    isActive
-                      ? "bg-accent"
-                      : "bg-slate-200 dark:bg-slate-800 opacity-60"
-                  }`}
+                  className={`absolute inset-x-0 -bottom-0.5 h-0.5 rounded-full transition-colors
+      ${
+        isActive
+          ? "bg-accent"
+          : "bg-slate-200 dark:bg-slate-800 opacity-60 group-hover:bg-slate-800 group-hover:dark:bg-slate-200"
+      }`}
                 />
               </button>
             );

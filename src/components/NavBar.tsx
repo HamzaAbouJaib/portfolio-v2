@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import { FaSun, FaMoon } from "react-icons/fa";
 
 type Theme = "light" | "dark";
 
@@ -92,7 +93,7 @@ const Navbar: React.FC = () => {
                 theme === "dark" ? "translate-x-5" : ""
               }`}
             >
-              {theme === "dark" ? "☾" : "☼"}
+              {theme === "dark" ? <FaMoon /> : <FaSun />}
             </div>
           </button>
         </div>

@@ -15,68 +15,70 @@ const Hero: React.FC = () => {
             hi, <span className="text-accent">Hamza</span> here. 👋
           </h1>
 
-          <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
-            Software engineering student from Canada 🇨🇦
-          </p>
+          <div className="space-y-2">
+            <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+              Software engineering student from Canada 🇨🇦
+            </p>
 
-          <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
-            I work with cloud infrastructure and enjoy building simple, modern
-            frontend experiences.
-          </p>
+            <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+              I work with cloud infrastructure and enjoy building simple, modern
+              frontend experiences.
+            </p>
 
-          {/* Social icons */}
-          <div className="flex items-center gap-4 pt-2">
-            <Tooltip label="GitHub">
-              <a
-                href="https://github.com/yourusername"
-                target="_blank"
-                className="text-xl hover:text-accent"
+            {/* Social icons */}
+            <div className="flex items-center gap-4 pt-2">
+              <Tooltip label="GitHub">
+                <a
+                  href="https://github.com/yourusername"
+                  target="_blank"
+                  className="text-xl hover:text-accent transition-all duration-300 ease-in-out"
+                >
+                  <FaGithub />
+                </a>
+              </Tooltip>
+
+              <Tooltip label="LinkedIn">
+                <a
+                  href="https://linkedin.com/in/yourusername"
+                  target="_blank"
+                  className="text-xl hover:text-accent transition-all duration-300 ease-in-out"
+                >
+                  <FaLinkedin />
+                </a>
+              </Tooltip>
+
+              <Tooltip label="Email">
+                <a
+                  href="mailto:youremail@gmail.com"
+                  className="text-xl hover:text-accent transition-all duration-300 ease-in-out"
+                >
+                  <FaEnvelope />
+                </a>
+              </Tooltip>
+
+              <Tooltip label="Credly">
+                <a
+                  href="https://www.credly.com/users/your-credly-profile"
+                  target="_blank"
+                  className="text-xl hover:text-accent transition-all duration-300 ease-in-out"
+                >
+                  <FaAward />
+                </a>
+              </Tooltip>
+
+              <button
+                onClick={() => navigate("/resume")}
+                aria-label="Resume"
+                className="rounded-full bg-accent px-4 py-1.5 font-medium text-slate-950 text-xs hover:bg-teal-200 transition-all duration-500 ease-in-out"
               >
-                <FaGithub />
-              </a>
-            </Tooltip>
+                Resume
+              </button>
+            </div>
 
-            <Tooltip label="LinkedIn">
-              <a
-                href="https://linkedin.com/in/yourusername"
-                target="_blank"
-                className="text-xl hover:text-accent"
-              >
-                <FaLinkedin />
-              </a>
-            </Tooltip>
-
-            <Tooltip label="Email">
-              <a
-                href="mailto:youremail@gmail.com"
-                className="text-xl hover:text-accent"
-              >
-                <FaEnvelope />
-              </a>
-            </Tooltip>
-
-            <Tooltip label="Credly">
-              <a
-                href="https://www.credly.com/users/your-credly-profile"
-                target="_blank"
-                className="text-xl hover:text-accent"
-              >
-                <FaAward />
-              </a>
-            </Tooltip>
-
-            <button
-              onClick={() => navigate("/resume")}
-              aria-label="Resume"
-              className="rounded-full bg-accent px-4 py-1.5 font-medium text-slate-950 hover:bg-teal-300 text-xs"
-            >
-              Resume
-            </button>
+            <p className="text-[0.75rem] text-slate-500 dark:text-slate-500 pt-1">
+              Currently learning: AWS and Terraform.
+            </p>
           </div>
-
-          <p className="text-[0.75rem] text-slate-500 dark:text-slate-500 pt-1">
-            Currently learning: AWS and Terraform.
-          </p>
         </div>
       </div>
     </section>
