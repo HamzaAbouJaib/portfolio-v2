@@ -1,7 +1,7 @@
 import React from "react";
 
 const ResumePage: React.FC = () => {
-  const resumeUrl = `${import.meta.env.BASE_URL}Resume.pdf`;
+  const resumeUrl = `${import.meta.env.BASE_URL}resume.pdf`;
 
   return (
     <section className="min-h-screen pb-10 pt-16">
