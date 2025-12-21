@@ -43,7 +43,7 @@ const Background: React.FC = () => {
         </div>
 
         <div className="relative">
-          <div key={activeTab} className="animate-fade-in space-y-5">
+          <div key={activeTab} className="space-y-5">
             <ul className="space-y-5">
               {activeTab === "experience"
                 ? experience.map((item) => (
