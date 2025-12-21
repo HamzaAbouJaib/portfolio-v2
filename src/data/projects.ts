@@ -49,7 +49,7 @@ export const projects: Project[] = [
     description:
       "Honeypot and monitoring pipeline that captured and analyzed large-scale RDP brute-force attacks, with dashboards for real-time visibility and threat insights.",
     tags: ["Azure", "Microsoft Sentinel", "KQL", "Cybersecurity"],
-    github_link: "#",
+    github_link: "https://github.com/HamzaAbouJaib/MS-Sentinel-HomeLab",
     images: [socRdp1, socRdp2],
   },
 
@@ -68,7 +68,7 @@ export const projects: Project[] = [
     description:
       "Mobile app that lets users capture bird photos and receive AI-assisted species identification.",
     tags: ["React Native", "Supabase", "Expo", "Firebase Auth", "TypeScript"],
-    github_link: "#",
+    github_link: "https://github.com/agoodyer/BirdScout",
     images: [birdscout1, birdscout2, birdscout3],
   },
 
@@ -112,6 +112,7 @@ export const projects: Project[] = [
       "An expense tracking web application that helps users manage budgets, track transactions, and categorize expenses.",
     tags: ["TypeScript", "JavaScript", "React", "Mantine UI", "Vite"],
     github_link: "https://github.com/HamzaAbouJaib/React-Expense-Tracker-App",
+    demo_link: "https://expense-tracker-react-ts-app.netlify.app/",
     images: [expense1, expense2, expense3, expense4, expense5, expense6],
   },
 

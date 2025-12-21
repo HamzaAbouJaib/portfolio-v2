@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
             <div className="flex items-center gap-4 pt-2">
               <Tooltip label="GitHub">
                 <a
-                  href="https://github.com/yourusername"
+                  href="https://github.com/HamzaAbouJaib"
                   target="_blank"
                   className="text-xl hover:text-accent transition-all duration-300 ease-in-out"
                 >
@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
 
               <Tooltip label="LinkedIn">
                 <a
-                  href="https://linkedin.com/in/yourusername"
+                  href="https://linkedin.com/in/hamzaaboujaib"
                   target="_blank"
                   className="text-xl hover:text-accent transition-all duration-300 ease-in-out"
                 >
@@ -49,7 +49,7 @@ const Hero: React.FC = () => {
 
               <Tooltip label="Email">
                 <a
-                  href="mailto:youremail@gmail.com"
+                  href="mailto:aboujaibhamza@gmail.com"
                   className="text-xl hover:text-accent transition-all duration-300 ease-in-out"
                 >
                   <FaEnvelope />
@@ -58,7 +58,7 @@ const Hero: React.FC = () => {
 
               <Tooltip label="Credly">
                 <a
-                  href="https://www.credly.com/users/your-credly-profile"
+                  href="https://www.credly.com/users/hamzaaboujaib"
                   target="_blank"
                   className="text-xl hover:text-accent transition-all duration-300 ease-in-out"
                 >
