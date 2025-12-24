@@ -16,7 +16,8 @@ const Navbar: React.FC = () => {
       "(prefers-color-scheme: light)"
     ).matches;
 
-    const initial: Theme = stored ?? (prefersDark ? "dark" : "light");
+    // const initial: Theme = stored ?? (prefersDark ? "dark" : "light");
+    const initial: Theme = "light";
     setTheme(initial);
     document.documentElement.classList.toggle("dark", initial === "light");
   }, []);
