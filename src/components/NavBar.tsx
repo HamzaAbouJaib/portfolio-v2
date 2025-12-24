@@ -11,15 +11,16 @@ const Navbar: React.FC = () => {
 
   // Initialize theme from localStorage or system preference
   useEffect(() => {
-    const stored = localStorage.getItem("theme") as Theme | null;
-    const prefersDark = window.matchMedia(
-      "(prefers-color-scheme: light)"
-    ).matches;
+    // const stored = localStorage.getItem("theme") as Theme | null;
+    // const prefersDark = window.matchMedia(
+    //   "(prefers-color-scheme: light)"
+    // ).matches;
 
     // const initial: Theme = stored ?? (prefersDark ? "dark" : "light");
-    const initial: Theme = "light";
-    setTheme(initial);
-    document.documentElement.classList.toggle("dark", initial === "light");
+    // setTheme(initial);
+    // document.documentElement.classList.toggle("dark", initial === "light");
+    document.documentElement.classList.remove("dark");
+    setTheme("light");
   }, []);
 
   const toggleTheme = () => {
