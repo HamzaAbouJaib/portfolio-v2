@@ -44,7 +44,7 @@ const Background: React.FC = () => {
 
         <div className="relative">
           <div key={activeTab} className="space-y-5">
-            <ul className="space-y-5">
+            <ul className="space-y-0">
               {activeTab === "experience"
                 ? experience.map((item) => (
                     <TimelineItem

@@ -19,7 +19,7 @@ const ResumePage: React.FC = () => {
           <a
             href={resumeUrl}
             download
-            className="rounded-md bg-accent px-4 py-2 text-xs font-medium text-slate-950 hover:bg-teal-300"
+            className="rounded-md bg-primary px-4 py-2 text-xs font-medium text-slate-950 hover:bg-teal-300"
           >
             Download PDF
           </a>
@@ -33,7 +33,7 @@ const ResumePage: React.FC = () => {
           >
             <p className="p-4 text-sm text-slate-700 dark:text-slate-300">
               Your browser doesn't support embedded PDFs.{" "}
-              <a href={resumeUrl} className="text-accent underline">
+              <a href={resumeUrl} className="text-primary underline">
                 Click here to download the file.
               </a>
             </p>

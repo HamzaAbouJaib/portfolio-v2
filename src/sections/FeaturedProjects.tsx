@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { MdArrowRightAlt } from "react-icons/md";
 import { projects } from "../data/projects";
 import SectionHeader from "../components/SectionHeader";
 import ProjectCard from "../components/ProjectCard";
@@ -26,9 +27,9 @@ const FeaturedProjects: React.FC = () => {
 
         <Link
           to="/projects"
-          className="block mt-4 text-xs text-accent hover:underline"
+          className="flex items-center gap-1 mt-4 text-xs border-b-[1px] border-transparent text-accent hover:border-accent w-fit transition-all duration-300 ease-in-out"
         >
-          View more →
+          View more <MdArrowRightAlt className="text-lg mt-1" />
         </Link>
 
         <ProjectModal project={selected} onClose={() => setSelected(null)} />

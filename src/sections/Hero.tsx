@@ -69,7 +69,7 @@ const Hero: React.FC = () => {
               <button
                 onClick={() => navigate("/resume")}
                 aria-label="Resume"
-                className="rounded-full bg-accent px-4 py-1.5 font-medium text-slate-950 text-xs hover:bg-teal-200 transition-all duration-500 ease-in-out"
+                className="rounded-full bg-accent px-4 py-1.5 font-medium text-slate-50 text-xs hover:bg-primary transition-all duration-500 ease-in-out"
               >
                 Resume
               </button>

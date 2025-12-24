@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
 interface CarouselProps {
   images: string[];
@@ -11,7 +12,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
   useEffect(() => {
     setIndex(0);
     setReady(false);
-  }, [images]);
+  }, [images.length]);
 
   if (!images || images.length === 0) {
     return (
@@ -29,17 +30,19 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
     <div className="relative w-full aspect-video rounded-lg overflow-hidden bg-slate-200 dark:bg-slate-800">
       <img
         src={images[index]}
-        className="w-full h-full object-contain bg-slate-200 dark:bg-slate-800"
+        className="w-full h-full object-contain pointer-events-none select-none"
         onLoad={() => setReady(true)}
       />
+
+      {!ready && "Loading"}
 
       {/* Prev */}
       {images.length > 1 && (
         <button
           onClick={prev}
-          className="absolute left-2 top-1/2 -translate-y-1/2 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 px-2 py-1 rounded shadow hover:bg-accent hover:text-black transition-all duration-500 ease-in-out"
+          className="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 px-2 py-1 rounded shadow hover:bg-accent hover:text-black transition-all duration-500 ease-in-out"
         >
-          {"<"}
+          <FaArrowLeft />
         </button>
       )}
 
@@ -47,9 +50,9 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
       {images.length > 1 && (
         <button
           onClick={next}
-          className="absolute right-2 top-1/2 -translate-y-1/2 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 px-2 py-1 rounded shadow hover:bg-accent hover:text-black transition-all duration-500 ease-in-out"
+          className="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 px-2 py-1 rounded shadow hover:bg-accent hover:text-black transition-all duration-500 ease-in-out"
         >
-          {">"}
+          <FaArrowRight />
         </button>
       )}
     </div>

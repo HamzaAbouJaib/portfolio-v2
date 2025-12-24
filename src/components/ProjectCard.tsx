@@ -12,7 +12,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
   return (
     <div
       onClick={onClick}
-      className="group cursor-pointer flex flex-col rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm hover:-translate-y-1 transition-transform"
+      className="group cursor-pointer flex flex-col rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm hover:shadow-accent transition-all duration-500 ease-in-out"
     >
       {thumbnail && (
         <div className="relative w-full aspect-video rounded-t-xl overflow-hidden">

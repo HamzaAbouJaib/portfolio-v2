@@ -16,8 +16,8 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
   bullets,
 }) => {
   return (
-    <li className="relative border-l border-slate-200 pl-4 dark:border-slate-800">
-      <span className="absolute -left-[5px] top-1 h-2 w-2 rounded-full bg-accent"></span>
+    <li className="relative border-l border-slate-200 pl-4 pb-5 dark:border-slate-800">
+      <span className="absolute -left-[5px] top-1 h-2 w-2 rounded-full bg-primary"></span>
       <div className="flex flex-wrap items-baseline justify-between gap-2">
         <div>
           <h3 className="text-sm font-semibold text-slate-900 dark:text-slate-50">

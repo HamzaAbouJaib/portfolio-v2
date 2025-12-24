@@ -5,9 +5,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        primary: {
+          DEFAULT: "#0f172a", // strong blue
+        },
+        secondary: {
+          DEFAULT: "#374151", // neutral gray
+        },
         accent: {
-          DEFAULT: "#00f0b5",
-          soft: "#0f766e",
+          DEFAULT: "#4f46e5", // lighter blue for buttons/hover
         },
       },
       fontFamily: {

@@ -13,7 +13,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
 }) => {
   return (
     <div className="mb-5">
-      <p className="font-mono text-xs uppercase tracking-[0.25em] text-accent">
+      <p className="font-mono text-xs uppercase tracking-[0.25em] text-primary">
         {eyebrow}
       </p>
       <h2 className="mt-2 text-2xl font-semibold text-slate-900 dark:text-slate-50">

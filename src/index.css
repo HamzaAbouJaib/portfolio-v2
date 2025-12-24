@@ -12,8 +12,8 @@ body {
 }
 
 ::selection {
-  background-color: #00f0b5;
-  color: #020617;
+  background-color: #4f46e5;
+  color: white;
 }
 
 /* Simple fade-in animation used by tabs */
@@ -26,8 +26,4 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-.animate-fade-in {
-  animation: fade-in 0.18s ease-out;
 }

@@ -21,7 +21,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
         {/* Close button */}
         <button
           onClick={onClose}
-          className="absolute top-3 right-3 text-slate-500 hover:text-accent text-xl"
+          className="absolute top-3 right-3 text-slate-500 hover:text-primary text-xl"
         >
           ✕
         </button>
@@ -54,7 +54,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
               href={project.github_link}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-accent px-4 py-1.5 font-medium text-slate-950 hover:bg-teal-200 transition-all duration-500 ease-in-out"
+              className="rounded-full bg-accent px-4 py-1.5 font-medium text-slate-50 hover:bg-primary transition-all duration-500 ease-in-out"
             >
               GitHub
             </a>
@@ -64,7 +64,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
               href={project.demo_link}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full border border-slate-300 px-4 py-1.5 font-medium text-slate-800 hover:border-accent dark:border-slate-700 hover:dark:bg-slate-700 hover:bg-slate-100 dark:text-slate-200 transition-all duration-500 ease-in-out"
+              className="rounded-full border border-slate-300 px-4 py-1.5 font-medium text-slate-800 hover:border-primary dark:border-slate-700 hover:dark:bg-slate-700 hover:bg-slate-100 dark:text-slate-200 transition-all duration-500 ease-in-out"
             >
               Demo
             </a>
