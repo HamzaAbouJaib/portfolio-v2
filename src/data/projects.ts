@@ -59,7 +59,7 @@ export const projects: Project[] = [
       "Full-stack online store featuring secure authentication, real-time payment processing, and an optimized product browsing experience.",
     tags: ["TypeScript", "React", "Next.js", "MongoDB", "Stripe", "Firebase"],
     github_link: "https://github.com/HamzaAbouJaib/ExoTech-Ecommerce-Website",
-    demo_link: "https://exotech-dashboard.vercel.app",
+    demo_link: "https://exotech.vercel.app",
     images: [exotech1, exotech2, exotech3, exotech4, exotech5, exotech6],
   },
 
